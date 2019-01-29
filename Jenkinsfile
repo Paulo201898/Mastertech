@@ -14,7 +14,6 @@ pipeline {
         }
 
 
-        }
         stage('Deploy') {
             steps {
                 sh 'docker run -d -p 8085:80 mastertech'
