@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build -t mastertech .'
+                sh 'sudo docker build -t mastertech .'
                 }
 
 
@@ -22,7 +22,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'docker run -d -p 8085:80 mastertech'
+                sh 'sudo docker run -d -p 8085:80 mastertech'
             }
         }
     }
