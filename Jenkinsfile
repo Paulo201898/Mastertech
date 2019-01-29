@@ -10,8 +10,12 @@ pipeline {
 
         }
         stage('Delivery'){
-         input 'Deploy to Production?'
-        }
+        input {
+                message "Quer fazer deploy em producao?"
+                ok "sim"
+            }
+
+		}
 
 
         stage('Deploy') {
