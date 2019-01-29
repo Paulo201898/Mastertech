@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'git clone https://github.com/Paulo201898/Mastertech.git /tmp/teste/'
-                sh 'docker build -t mastertech /tmp/teste/'
+                sh 'docker build -t mastertech .'
                 }
 
 
