@@ -14,7 +14,10 @@ pipeline {
                 message "Quer fazer deploy em producao?"
                 ok "sim"
             }
+	steps {
+		sh 'echo enviando para producao'
 
+		}
 		}
 
 
