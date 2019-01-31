@@ -1,3 +1,3 @@
-# Mastertechar
+# Mastertech
 
-usuario jenkins precisa esto sudoers sem senha 
+usuario jenkins precisa estar sudoers sem senha
